@@ -1,0 +1,95 @@
+/* ==========================================================Машина=============================================================================== */
+body{
+    background-image: url("vector-scene-with-pine-trees-by-the-river.jpg");
+}
+.sr{
+    background-color: rgb(235, 221, 21);
+    width: 500px;
+    height: 500px;
+    border-radius: 200px 100px 0px 0px;
+}
+.zd{
+    background-color: rgb(235, 221, 21);
+    width: 300px;
+    height: 300px;
+    border-radius: 0px 0px 0px 200px;
+    align-items: end;
+}
+.car{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: row;
+    align-items: end;
+}
+.pr{
+    background-color: rgb(235, 221, 21);
+    width: 300px;
+    height: 300px;
+    border-radius: 0px 200px 200px 0px;
+    align-items: end;
+}
+.okno{
+    background-color: orangered;
+    width: 300px;
+    height: 100px;
+    transform: translate(-172px, -305px);
+    border-radius: 0px 0px 200px 0px;
+
+}
+.truba{background-color: cyan;
+    width: 500px;
+    height: 100px;
+    /* transform: translate(-342px, -305px); */}
+.glazik{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: row;
+    align-items: end;
+    transform: translate(400px, -900px);
+}
+.ch{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 200px 200px 200px 200px;
+}
+.bel1{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 200px 200px 200px 200px;
+    transform: translate(10px, 10px);
+}
+
+.bel2{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 200px 200px 200px 200px;
+    transform: translate(25px, 15px);
+}
+.ch2{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 200px 200px 200px 200px;
+    transform: translate(25px, 15px);
+}
+.imuge{
+    margin-top: 1700px;
+}
+.imuge{
+    animation-name: road;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes road{
+    from{
+        transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(4000px, 0px);
+    }
+}
