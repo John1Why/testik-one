@@ -1,0 +1,429 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Этот</li>
+        <li>тест</li>
+    </ul>
+    <ul>
+        <li>Полностью</li>
+        <li>Пройден</li>
+    </ul>
+    <script>
+        let elements = document.querySelectorAll('ul > li:last-child');
+
+        for(let elem of elements){
+            alert(elem.innerHTML)
+        }
+    </script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Содержание</h1>
+
+    <div class="contents">
+        <ul class="book">
+            <li class="chapter"></li>
+            <li class="chapter"></li>
+        </ul>
+    </div>
+
+    <script>
+        let chapter = document.querySelector('.chapter')
+
+        alert(chapter.closest('.book'))
+        alert(chapter.closest('.contents'))
+
+        alert(chapter.closest('h1'))
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>First div</div>
+
+    <script>
+        let divs = document.getElementsByName('div')
+        alert(divs.length)
+    </script>
+
+    <div>second div</div>
+
+    <script>
+        alert(divs.length)
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>First div</div>
+
+    <script>
+        let divs = document.querySelectorAll('div')
+        alert(divs.length)
+    </script>
+
+    <div>Second div</div>
+
+    <script>
+        alert(divs.length)
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <p>параграф</p>
+        <div>DIV</div>
+
+        <script>
+            alert(document.body.innerHTML)
+            document.body.innerHTML = 'Новый BODY'
+        </script>
+    </body>
+</body>
+</html> -->
+
+<!-- <div id="news">
+    <h1>Срочно в номер!</h1>
+    <p>Марсиане атоковали человечество</p>
+</div>
+
+<script>
+    alert(news.textContent)
+</script> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "elem">element</div>
+
+    <script>
+        setInterval(() => elem.hidden = !elem.hidden, 0.1);
+    </script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE HTML>
+<html>
+<body>
+  <ul>
+    <li>Животные
+      <ul>
+        <li>Млекопитающие
+          <ul>
+            <li>Коровы</li>
+            <li>Ослы</li>
+            <li>Собаки</li>
+            <li>Тигры</li>
+          </ul>
+        </li>
+        <li>Другие
+          <ul>
+            <li>Змеи</li>
+            <li>Птицы</li>
+            <li>Ящерицы</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Рыбы
+      <ul>
+        <li>Аквариумные
+          <ul>
+            <li>Гуппи</li>
+            <li>Рыба-ангел</li>
+          </ul>
+        </li>
+        <li>Морские
+          <ul>
+            <li>Морская форель</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    // ... ваш код...
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="elem" about="Elephant"></div>
+
+  <script>
+    alert( elem.getAttribute('About'))
+
+    elem.setAttribute('Test', 123)
+
+    alert(elem.outerHTML)
+
+    for(let attr of elem.attributes){
+      alert(`${attr.name} = ${attr.value}`)
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ol id="ol">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+  </ol>
+  <script>
+    ol.before('before')
+    ol.after('after')
+
+    let liFirst = document.createElement('li')
+    liFirst.innerHTML = 'prepend'
+    ol.prepend(liFirst)
+
+    let liLast = document.createElement('li')
+    liLast.innerHTML = "append"
+    ol.append(liLast)
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .alert{
+      padding: 15px;
+      border: 1px solid floralwhite;
+      border-radius: 4px;
+      color: indigo;
+      background-color: cadetblue;
+    }
+  </style>
+  <script>
+    document.body.insertAdjacentHTML("afterbegin", `<div class ="alert">
+      <strong>Всем привет!</strong> Вы прочитали важное сообщение
+      </div>`)
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- Задание 1 -->
+<!-- <!DOCTYPE HTML>
+<html>
+<body>
+  <ul>
+    <li>Животные
+      <ul>
+        <li>Млекопитающие
+          <ul>
+            <li>Коровы</li>
+            <li>Ослы</li>
+            <li>Собаки</li>
+            <li>Тигры</li>
+          </ul>
+        </li>
+        <li>Другие
+          <ul>
+            <li>Змеи</li>
+            <li>Птицы</li>
+            <li>Ящерицы</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Рыбы
+      <ul>
+        <li>Аквариумные
+          <ul>
+            <li>Гуппи</li>
+            <li>Рыба-ангел</li>
+          </ul>
+        </li>
+        <li>Морские
+          <ul>
+            <li>Морская форель</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    let n = 0
+    let perem = document.getElementsByTagName('li') 
+    console.log(perem)
+  </script>
+</body>
+</html> -->
+<!-- Задание 2 -->
+<!-- <html>
+
+<body>
+
+  <script>
+
+    alert(document.body.lastChild.nodeType);
+
+  </script>
+
+</body>
+
+</html> -->
+<!-- Ответ: 1 -->
+
+<!-- Задание 3 -->
+<!-- <script>
+
+    let body = document.body;
+  
+    body.innerHTML = "" + body.tagName + "";
+  
+    alert( body.firstChild.data ); // что выведет?
+  
+  </script> -->
+<!-- Ответ: Выведет ошибку -->
+<!-- Задание 4 -->
+<!-- Ответ 1: HTMLDocument
+Ответ 2: Главное т.к. В него входит весь написанный документ
+Ответ 3: Наследует от Element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // function foo(){
+    //   table = document.createElement("table")
+    // for(let i = 0; i<1; i++){
+    //   let row = table.insertRow();
+    //   for(let j = 0; j<5; j++){
+    //     let dan = row.insertCell()
+    //     let ch = Math.trunc(Math.random(0,99)*100)
+    //     dan.innerHTML =ch
+    //     if(ch >= 50){
+    //       table.rows[i].cells[j].style.backgroundColor = 'orange'
+    //     }
+    //     l++
+    //     }
+    //   }
+    //   document.body.appendChild(table)
+    // }
+    function foo(){
+      if(table.rows.length == 5){
+      let table = document.createElement("table")
+      let row = table.insertRow();
+      let dan = row.insertCell();
+        let ch = Math.trunc(Math.random(0,99)*100)
+        dan.innerHTML =ch
+        if(ch >= 50){
+          // table.rows[i].cells[j].style.backgroundColor = 'orange'
+        }
+        l++
+      // document.body.appendChild(table)
+    }else{
+        // let row = table.insertRow();
+        let dan = row.insertCell();
+        let ch = Math.trunc(Math.random(0,99)*100)
+        dan.innerHTML =ch
+        if(ch >= 50){
+          // table.rows[i].cells[j].style.backgroundColor = 'orange'
+        }
+        l++
+        }
+      }
+      // document.body.appendChild(table)
+
+
+
+    let mas = []
+    let l = 0
+    for(let i = 0; i<30; i++){
+      mas[i] = Math.trunc(Math.random(0,99)*100)
+    }
+    console.log(mas)
+    table = document.createElement("table")
+    for(let i = 0; i<6; i++){
+      let row = table.insertRow();
+      for(let j = 0; j<5; j++){
+        let dan = row.insertCell()
+        dan.innerHTML = mas[l]
+        if(mas[l] >= 50){
+          table.rows[i].cells[j].style.backgroundColor = 'orange'
+        }
+        l++
+        }
+      }
+      document.body.appendChild(table)
+
+  </script>
+  <button onclick="foo()">Добавить число</button>
+<Script>
+  let row = table.insertRow();
+</Script>
+</body>
+</html>
